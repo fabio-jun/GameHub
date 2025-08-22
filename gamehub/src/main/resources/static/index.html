@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>GameHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-row">
+        <div class="brand">
+          <a href="#">GameHub</a>
+        </div>
+        <form id="searchForm" class="search" role="search" aria-label="Buscar jogos">
+          <input id="searchInput" type="search" placeholder="Busque no GameHub!" aria-label="Buscar" />
+          <button class="btn" type="submit" aria-label="Buscar">Buscar</button>
+        </form>
+        <div class="header-actions">
+          <a href="#login" id="navLogin">Entre</a>
+          <a href="#login" id="navSignup">Cadastre-se</a>
+          <a href="#perfil" id="navPerfil" style="display:none">Perfil</a>
+          <a href="#carrinho" id="navCart">Carrinho</a>
+          <button id="logoutBtn" class="btn btn-logout" style="display:none">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <div class="container row center">
+        <span id="clienteInfo">Não autenticado</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/assets/js/app.js"></script>
+  </body>
+</html>
