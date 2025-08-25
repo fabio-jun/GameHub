@@ -4,7 +4,7 @@ Uma plataforma de e-commerce de jogos digitais desenvolvida com Spring Boot e Ja
 
 ## 📋 Sobre o Projeto
 
-GameHub é uma loja online para jogos digitais que oferece uma experiência moderna de compra e gerenciamento. O sistema foi desenvolvido seguindo arquitetura MVC com separação clara entre frontend e backend, proporcionando uma interface responsiva e intuitiva para usuários e administradores.
+Inicialmente concebido como um projeto acadêmico de criação do backend de uma loja virtual. O sistema segue o padrão MVC com o backend implementando uma API REST, trafegando dados no formato JSON, tanto para atualizações quanto para consultas. A implementação utiliza a stack Java EE, Spring Boot e o SGBD PostgreSQL. A camada de persistência, bem como a interação com a mesma, foi implementada manualmente. O objetivo do trabalho era adquirir conhecimentos práticos de integração de bancos de dados em aplicações web em camadas, seguindo boas práticas de desenvolvimento. Após a conclusão, um frontend foi desenvolvido a fim decomplementar a aplicação.
 
 ## 🚀 Tecnologias Utilizadas
 
