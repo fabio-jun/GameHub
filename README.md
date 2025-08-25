@@ -4,7 +4,7 @@ Uma plataforma de e-commerce de jogos digitais desenvolvida com Spring Boot e Ja
 
 ## 📋 Sobre o Projeto
 
-Inicialmente concebido como um projeto acadêmico de criação do backend de uma loja virtual. O sistema segue o padrão MVC com o backend implementando uma API REST, trafegando dados no formato JSON, tanto para atualizações quanto para consultas. A implementação utiliza a stack Java EE, Spring Boot e o SGBD PostgreSQL. A camada de persistência, bem como a interação com a mesma, foi implementada manualmente. O objetivo do trabalho era adquirir conhecimentos práticos de integração de bancos de dados em aplicações web em camadas, seguindo boas práticas de desenvolvimento. Após a conclusão, um frontend foi desenvolvido a fim decomplementar a aplicação.
+Inicialmente concebido como um projeto acadêmico de criação do backend de uma loja virtual. O sistema segue o padrão MVC com o backend implementando uma API REST, trafegando dados no formato JSON, tanto para atualizações quanto para consultas. A implementação utiliza a stack Java EE, Spring Boot e o SGBD PostgreSQL. A camada de persistência, bem como a interação com a mesma, foi implementada manualmente. O objetivo do trabalho era adquirir conhecimentos práticos de integração de bancos de dados em aplicações web em camadas, seguindo boas práticas de desenvolvimento. Após a conclusão, um frontend foi desenvolvido a fim de complementar a aplicação.
 
 ## 🚀 Tecnologias Utilizadas
 
