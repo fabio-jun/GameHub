@@ -11,7 +11,6 @@ public class AnaliseVendasAvaliacoes {
         this.totalVendido = totalVendido;
     }
 
-    // Getters e setters
     public String getJogo() {
         return jogo;
     }

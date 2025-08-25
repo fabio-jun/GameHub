@@ -6,7 +6,7 @@ public class Review {
     private String revComentario;
     private double revNota;
     private String revData;
-    private String nomeCliente; // Para exibir o nome do cliente nas reviews
+    private String nomeCliente;
 
     public int getRevIdJogo() { return revIdJogo; }
     public void setRevIdJogo(int revIdJogo) { this.revIdJogo = revIdJogo; }

@@ -89,7 +89,7 @@ public class ReviewController {
             
             if (reviews.isEmpty()) {
                 System.out.println("Nenhuma review encontrada para jogo " + jogoId);
-                return ResponseEntity.ok(reviews); // Retorna lista vazia em vez de 204
+                return ResponseEntity.ok(reviews); 
             }
             return ResponseEntity.ok(reviews);
         } catch (SQLException e) {

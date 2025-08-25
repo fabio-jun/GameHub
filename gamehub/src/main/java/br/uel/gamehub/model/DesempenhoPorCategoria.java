@@ -9,7 +9,6 @@ public class DesempenhoPorCategoria {
         this.totalVendido = totalVendido;
     }
 
-    // Getters e setters
     public String getNomeCategoria() {
         return nomeCategoria;
     }

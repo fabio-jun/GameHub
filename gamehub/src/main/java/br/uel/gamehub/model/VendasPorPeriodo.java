@@ -9,7 +9,6 @@ public class VendasPorPeriodo {
         this.totalArrecadado = totalArrecadado;
     }
 
-    // Getters e setters
     public int getTotalVendas() {
         return totalVendas;
     }

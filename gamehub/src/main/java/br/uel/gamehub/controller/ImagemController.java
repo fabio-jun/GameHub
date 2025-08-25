@@ -26,7 +26,6 @@ public class ImagemController {
             resource = new ClassPathResource("static/imagens/default.jpg");
         }
 
-        // Define o content type com base na extensão (ajuste conforme necessário)
         String contentType = "image/jpeg";
         if (filename.toLowerCase().endsWith(".jpg")) {
             contentType = "image/jpg";

@@ -9,7 +9,6 @@ public class ComprasPorFaixaHoraria {
         this.totalVendas = totalVendas;
     }
 
-    // Getters e setters
     public String getFaixaHoraria() {
         return faixaHoraria;
     }

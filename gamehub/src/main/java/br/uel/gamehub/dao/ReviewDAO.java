@@ -154,7 +154,6 @@ public class ReviewDAO {
                     review.setRevNota(result.getDouble("rev_nota"));
                     review.setRevData(result.getString("rev_data"));
                     
-                    // Adicionar nome do cliente se disponível
                     String nomeCliente = result.getString("nome_cliente");
                     if (nomeCliente != null) {
                         review.setNomeCliente(nomeCliente);

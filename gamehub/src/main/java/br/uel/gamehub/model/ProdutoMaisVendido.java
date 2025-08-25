@@ -9,7 +9,7 @@ public class ProdutoMaisVendido {
         this.totalVendido = totalVendido;
     }
 
-    // Getters e setters
+
     public String getJogo() {
         return jogo;
     }

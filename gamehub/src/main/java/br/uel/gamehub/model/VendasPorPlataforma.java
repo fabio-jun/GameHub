@@ -9,7 +9,6 @@ public class VendasPorPlataforma {
         this.totalVendido = totalVendido;
     }
 
-    // Getters e setters
     public String getNomePlataforma() {
         return nomePlataforma;
     }

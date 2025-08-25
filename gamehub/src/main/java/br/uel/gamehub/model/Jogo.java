@@ -19,7 +19,6 @@ public class Jogo {
 
     private String imagePath;
     
-    // Campos adicionais para categoria, plataforma e desenvolvedor
     private String categoria;
     private String plataforma;
     private String desenvolvedor;
