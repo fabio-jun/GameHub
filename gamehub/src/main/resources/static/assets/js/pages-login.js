@@ -3,18 +3,18 @@ import { setCliente } from './auth.js';
 
 export async function renderLogin(root) {
   root.innerHTML = `
-    <section class="container" style="max-width:480px">
-      <h2>Entrar</h2>
-      <div class="card" style="padding:1rem">
-        <form id="formLogin" style="display:flex; flex-direction:column; gap:.5rem">
+    <div class="login-wrapper">
+      <div class="login-card">
+        <h2>Entrar</h2>
+        <form id="formLogin">
           <input id="email" placeholder="Email" type="email" required />
           <input id="senha" placeholder="Senha" type="password" required />
           <button class="btn" type="submit">Entrar</button>
         </form>
-        <hr style="margin:1rem 0; border-color:#2a2a33" />
+        <hr />
         <details>
           <summary>Criar conta</summary>
-          <form id="formCriar" style="display:flex; flex-direction:column; gap:.5rem; margin-top:.5rem">
+          <form id="formCriar">
             <input id="pnome" placeholder="Primeiro nome" required />
             <input id="snome" placeholder="Sobrenome" required />
             <input id="endereco" placeholder="Endereço" />
@@ -24,9 +24,9 @@ export async function renderLogin(root) {
             <button class="btn" type="submit">Criar e entrar</button>
           </form>
         </details>
-        <p id="loginMsg" style="color:#ff6b6b; margin-top:.5rem"></p>
+        <p id="loginMsg" class="error" style="margin-top:.75rem"></p>
       </div>
-    </section>
+    </div>
   `;
 
   const $msg = root.querySelector('#loginMsg');

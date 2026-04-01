@@ -1,5 +1,13 @@
 const API_BASE = window.location.origin;
 
+export function toast(msg, type = 'success') {
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 3000);
+}
+
 export async function fetchJson(path, options = {}) {
   const res = await fetch(API_BASE + path, {
     headers: { 'Content-Type': 'application/json' },

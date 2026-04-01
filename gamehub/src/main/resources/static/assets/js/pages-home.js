@@ -1,4 +1,4 @@
-import { api } from './api.js';
+import { api, toast } from './api.js';
 import { getClienteId } from './auth.js';
 
 let searchQuery = '';
@@ -82,9 +82,9 @@ export async function renderHome(root, state) {
       if (!idCliente) { window.location.hash = '#login'; return; }
       try {
         await api.adicionarAoCarrinho(idCliente, { idJogo, qtd: 1 });
-        alert('Adicionado ao carrinho.');
+        toast('Adicionado ao carrinho');
       } catch (err) {
-        alert('Erro ao adicionar: ' + err.message);
+        toast('Erro ao adicionar: ' + err.message, 'error');
       }
     }
     if (action === 'detalhes') {

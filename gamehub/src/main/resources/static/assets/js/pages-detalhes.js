@@ -1,4 +1,4 @@
-import { api } from './api.js';
+import { api, toast } from './api.js';
 import { getClienteId } from './auth.js';
 
 function moedaBR(v) {
@@ -150,9 +150,9 @@ export async function renderDetalhes(root, state) {
       
       try {
         await api.adicionarAoCarrinho(clienteId, { idJogo: jogoId, qtd: 1 });
-        alert('Adicionado ao carrinho!');
+        toast('Adicionado ao carrinho');
       } catch (err) {
-        alert('Erro ao adicionar: ' + err.message);
+        toast('Erro ao adicionar: ' + err.message, 'error');
       }
     });
 

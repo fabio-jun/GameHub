@@ -1,4 +1,4 @@
-import { api } from './api.js';
+import { api, toast } from './api.js';
 import { getClienteId } from './auth.js';
 
 function moedaBR(v) {
@@ -63,7 +63,7 @@ export async function renderCart(root) {
       await api.atualizarQtd(idCliente, idJogo, qtd);
       await load();
     } catch (err) {
-      alert('Erro ao atualizar: ' + err.message);
+      toast('Erro ao atualizar: ' + err.message, 'error');
     }
   });
 
@@ -75,17 +75,17 @@ export async function renderCart(root) {
     try {
       await api.atualizarQtd(idCliente, idJogo, qtd);
     } catch (err) {
-      alert('Erro ao atualizar: ' + err.message);
+      toast('Erro ao atualizar: ' + err.message, 'error');
     }
   });
 
   root.querySelector('#finalizar').addEventListener('click', async () => {
     try {
       await api.realizarCompra(idCliente);
-      alert('Compra realizada!');
+      toast('Compra realizada com sucesso');
       window.location.hash = '#';
     } catch (err) {
-      alert('Erro ao finalizar: ' + err.message);
+      toast('Erro ao finalizar: ' + err.message, 'error');
     }
   });
 }
