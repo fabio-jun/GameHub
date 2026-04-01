@@ -1,12 +1,12 @@
-# 🎮 GameHub
+# GameHub
 
 Uma plataforma de e-commerce de jogos digitais desenvolvida com Spring Boot e JavaScript.
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Inicialmente concebido como um projeto acadêmico de criação do backend de uma loja virtual. O sistema segue o padrão MVC com o backend implementando uma API REST, trafegando dados no formato JSON, tanto para atualizações quanto para consultas. A implementação utiliza a stack Java EE, Spring Boot e o SGBD PostgreSQL. A camada de persistência, bem como a interação com a mesma, foi implementada manualmente. O objetivo do trabalho era adquirir conhecimentos práticos de integração de bancos de dados em aplicações web em camadas, seguindo boas práticas de desenvolvimento. Após a conclusão, um frontend foi desenvolvido a fim de complementar a aplicação.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Backend
 - **Java 21** - Linguagem principal
@@ -27,7 +27,7 @@ Inicialmente concebido como um projeto acadêmico de criação do backend de uma
 - **DAO Pattern** - Acesso a dados
 - **CORS** - Configuração para requisições cross-origin
 
-## 🎯 Funcionalidades Principais
+## Funcionalidades Principais
 
 ### Para Usuários
 - **Catálogo de Jogos** - Navegação e busca por jogos
@@ -43,7 +43,7 @@ Inicialmente concebido como um projeto acadêmico de criação do backend de uma
 - **Relatórios** - Análise de vendas e performance
 - **Categorias e Plataformas** - Organização do catálogo
 
-## 🛠️ Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Java 21+
@@ -70,7 +70,7 @@ Inicialmente concebido como um projeto acadêmico de criação do backend de uma
    - Frontend: http://localhost:8080
    - API: http://localhost:8080/api
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 gamehub/
