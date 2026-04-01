@@ -15,7 +15,7 @@ function cardTemplate(j) {
   const nome = j.nome || j.titulo || 'Jogo';
   const preco = j.preco ?? j.valor ?? 0;
   const id = j.idJogo ?? j.id ?? j.codigo ?? 0;
-  const img = j.imagemUrl || `/imagens/${(j.capa || 'default.jpg')}`;
+  const img = j.imagePath ? `/imagens/${j.imagePath}` : '/imagens/default.jpg';
   return `
     <article class="card">
       <img src="${img}" alt="${nome}" loading="lazy" />
